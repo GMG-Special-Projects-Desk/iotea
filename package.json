@@ -1,0 +1,23 @@
+{
+  "name": "iotea",
+  "version": "0.0.1",
+  "description": "A simple packet sniffing package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "Surya Mattu <surya.mattu@gizmodomedia.com>",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.190.0",
+    "dotenv": "^5.0.0",
+    "firehoser": "^1.2.5",
+    "is-tls-client-hello": "^1.0.0",
+    "object-hash": "^1.2.0",
+    "pcap": "git+https://github.com/mranney/node_pcap.git",
+    "request": "^2.83.0",
+    "sni": "^1.0.0"
+  }
+}
