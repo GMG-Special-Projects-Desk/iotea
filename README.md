@@ -1,5 +1,5 @@
 
-## 🔎🏡  [How To Surveil Your Smart Home](https://gizmodo.com/preview/how-to-surveil-your-smart-home-1822939698)
+## 🔎🏡  [How To Surveil Your Smart Home](https://gizmodo.com/how-to-surveil-your-smart-home-1822939698)
 
 
 
