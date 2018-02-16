@@ -11,7 +11,7 @@ This script only parses HTTP and HTTPS packets. It is not meant to be a comprehe
 
 ### Things you will need
 
-- A Raspberry Pi 3 with Node.js installed
+- A Raspberry Pi 3 with Node.js v8.9.1 or above installed.
   - You could use a Pi 2 with an external Wi-Fi dongle
 
 - Ethernet connection to the internet from the Pi
@@ -37,13 +37,25 @@ This script only parses HTTP and HTTPS packets. It is not meant to be a comprehe
     shost: '8C:85:90:50:66:05',
     dhost: '8C:09:F4:0E:65:67',
     saddr: '192.168.0.42',
-    daddr: '216.58.219.205',
+    daddr: '216.10.119.205',
     sport: 59024,
     dport: 443,
     type: 'https',
-    payload: 'accounts.google.com',
+    payload: 'someurl.com',
     id: '10f43a3c9ecb22affd1afdafaa4643e9a578ac37' }
   ```
+
+- Object keys:
+
+  - `ts` timestamp
+  - `shost` Packet source MAC address
+  - `dhost` Packet destination MAC address
+  - `saddr` Packet source IP address
+  - `daddr` Packet destination IP address
+  - `sport` Packet source port
+  - `dport` Packet destination port
+  - `type`  HTTP or HTTPS. If HTTPS it will have the url the packet is trying to reach. If HTTP it will have the entire payload
+  - `id` Hash from the Object
 
 - If you want to run on boot add `/usr/bin/nodejs /path/to/iotea/index.js 2>&1 &` to your [/etc/rc.local](https://www.raspberrypi.org/documentation/linux/usage/rc-local.md)
 
