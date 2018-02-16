@@ -3,9 +3,9 @@
 
 
 
-By default this script just outputs what its sees in the console. It is also setup to send data to an S3 bucket through AWS Kinesis if you want to use that. We used Kinesis for convenience bvut it is by no means necessary you can store the parsed data wherever you want.
+By default this script just outputs what it sees in the console. It is also set up to send data to an S3 bucket through AWS Kinesis if you want to use that. We used Kinesis for convenience but it is by no means necessary; you can store the parsed data wherever you want.
 
-This script only parses HTTP and HTTPS packets. It is not meant to be a comprehensive look at all the traffic going over the network. Its just enough so that you can get a sense of what the devices you own are saying to their servers.
+This script only parses HTTP and HTTPS packets. It is not meant to be a comprehensive look at all the traffic going over the network. It's just enough so that you can get a sense of what the devices you own are saying to their servers.
 
 
 
@@ -89,5 +89,5 @@ If you are using any remote server to store data
 
 ### Additional things
 
-Since Kashmir lives in San Francisco and I live in New York I had to set up a reverse ssh-tunnel to be able to debug the Pi remotely. I'm not going to go into the details of that setup for the sake of simplicity but in case you have a similar requirement I followed the steps in [this tutorial](https://jerrygamblin.com/2016/04/23/persistent-reverse-ssh-tunnels-on-a-raspberrypi/) which worked for me. You will need to know the basics of how ssh works and will probably also want to know how to set up a VPS like an AWS EC2 instance or a Digital Ocean droplet for example.
+Since Kashmir lives in San Francisco and I live in New York, I had to set up a reverse ssh-tunnel to be able to debug the Pi remotely. I'm not going to go into the details of that set-up for the sake of simplicity but in case you have a similar requirement I followed the steps in [this tutorial](https://jerrygamblin.com/2016/04/23/persistent-reverse-ssh-tunnels-on-a-raspberrypi/) which worked for me. You will need to know the basics of how ssh works and will probably also want to know how to set up a VPS like an AWS EC2 instance or a Digital Ocean droplet for example.
 
